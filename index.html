@@ -714,16 +714,15 @@ organizational goals. Skilled in ensuring seamless operations through proactive 
 
 
     
-
 <style>
 .recommendation-section {
-    max-width: 80%; /* Adjust width for better utilization */
+    max-width: 90%; /* Increase max-width for better utilization */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin-bottom: 40px; /* Added space at the bottom */
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .recommendation-card {
@@ -731,14 +730,26 @@ organizational goals. Skilled in ensuring seamless operations through proactive 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 20px); /* Make three columns */
-    box-sizing: border-box;
+    flex: 1 1 calc(33.333% - 20px); /* Make the cards more flexible */
+    min-width: 300px;
 }
 
 .recommendation-title {
     color: #007bff;
     font-size: 20px;
     font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .recommendation-card {
+        flex: 1 1 calc(50% - 20px); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .recommendation-card {
+        flex: 1 1 100%; /* Stack vertically on smaller screens */
+    }
 }
 </style>
 
@@ -769,8 +780,6 @@ organizational goals. Skilled in ensuring seamless operations through proactive 
         <p>"Harshul has demonstrated himself as a hardworking and curious learner academically. His ability to manage program demands, projects, and other responsibilities is remarkable."</p>
     </div>
 </div>
-
-
 
     
 
