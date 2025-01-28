@@ -714,94 +714,68 @@ organizational goals. Skilled in ensuring seamless operations through proactive 
 
 <style>
 .recommendation-section {
+    max-width: 90%; /* Increase max-width for better utilization */
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    padding: 40px 20px;
+    margin-bottom: 40px;
 }
 
 .recommendation-card {
     background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    flex: 1 1 30%;
-    min-width: 340px;
-    max-width: 420px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px); /* Make the cards more flexible */
+    min-width: 300px;
 }
 
 .recommendation-title {
-    color: #0056b3;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.recommendation-content {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    font-weight: 500;
-}
-
-.recommendation-email {
-    color: #0056b3;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.recommendation-email:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .recommendation-card {
-        flex: 1 1 45%;
+        flex: 1 1 calc(50% - 20px); /* 2 columns on medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .recommendation-card {
-        flex: 1 1 100%;
-        max-width: 90%;
+        flex: 1 1 100%; /* Stack vertically on smaller screens */
     }
 }
 </style>
 
 <div class="recommendation-section">
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/Harshul - Letter of Recommendation.pdf" class="recommendation-email" target="_blank">Letter of Recommendation: Jamie Kanlagna</a></div>
-        <p class="recommendation-content"><strong>Full-Time Instructor, School of Applied Computer Science and IT</strong><br>
+        <div class="recommendation-title"><a href="assets/Harshul - Letter of Recommendation.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Jamie Kanlagna</a></div>
+        <p><strong>Full-Time Instructor, School of Applied Computer Science and IT</strong><br>
         Conestoga College, Kitchener, Ontario<br>
-        <a href="mailto:jkanlagna@conestogac.on.ca" class="recommendation-email">jkanlagna@conestogac.on.ca</a></p>
-        <p class="recommendation-content">"Harshul is an exceptional student with a strong academic record, critical thinking skills, and a great desire for continuous learning. His dedication, perseverance, and commitment are truly remarkable."</p>
+        <a href="mailto:jkanlagna@conestogac.on.ca">jkanlagna@conestogac.on.ca</a></p>
+        <p>"Harshul is an exceptional student with a strong academic record, critical thinking skills, and a great desire for continuous learning. His dedication, perseverance, and commitment are truly remarkable."</p>
     </div>
     
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/H_Recommendation_signed.pdf" class="recommendation-email" target="_blank">Letter of Recommendation: Serge Trunkin</a></div>
-        <p class="recommendation-content"><strong>Professor, Applied Computer Science & IT - ANISA</strong><br>
+        <div class="recommendation-title"><a href="assets/H_Recommendation_signed.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Serge Trunkin</a></div>
+        <p><strong>Professor, Applied Computer Science & IT - ANISA</strong><br>
         Conestoga College, Kitchener, Ontario<br>
         <strong>Enterprise Architect and Cybersecurity Officer</strong><br>
         Loyalist College, Belleville, Ontario<br>
-        <a href="mailto:strunkin@conestogac.on.ca" class="recommendation-email">strunkin@conestogac.on.ca</a> | <a href="mailto:strunkin@loyalistcollege.com" class="recommendation-email">strunkin@loyalistcollege.com</a></p>
-        <p class="recommendation-content">"Harshul consistently demonstrated a strong grasp of complex concepts, tackling difficult scenarios with ease. He showed exceptional academic achievement and interpersonal skills."</p>
+        <a href="mailto:strunkin@conestogac.on.ca">strunkin@conestogac.on.ca</a> | <a href="mailto:strunkin@loyalistcollege.com">strunkin@loyalistcollege.com</a></p>
+        <p>"Harshul consistently demonstrated a strong grasp of complex concepts, tackling difficult scenarios with ease. He showed exceptional academic achievement and interpersonal skills."</p>
     </div>
     
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/Recommendation - letter Conestoga - Harshul.pdf" class="recommendation-email" target="_blank">Letter of Recommendation: Ayo Saba</a></div>
-        <p class="recommendation-content"><strong>Professor, School of Applied Computer Science and IT</strong><br>
+        <div class="recommendation-title"><a href="assets/Recommendation - letter Conestoga - Harshul.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Ayo Saba</a></div>
+        <p><strong>Professor, School of Applied Computer Science and IT</strong><br>
         Conestoga College, Kitchener, Ontario<br>
-        <a href="mailto:asaba@conestogac.on.ca" class="recommendation-email">asaba@conestogac.on.ca</a></p>
-        <p class="recommendation-content">"Harshul has demonstrated himself as a hardworking and curious learner academically. His ability to manage program demands, projects, and other responsibilities is remarkable."</p>
+        <a href="mailto:asaba@conestogac.on.ca">asaba@conestogac.on.ca</a></p>
+        <p>"Harshul has demonstrated himself as a hardworking and curious learner academically. His ability to manage program demands, projects, and other responsibilities is remarkable."</p>
     </div>
 </div>
 
