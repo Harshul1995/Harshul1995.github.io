@@ -713,75 +713,89 @@ organizational goals. Skilled in ensuring seamless operations through proactive 
 
 
 
-    
 <style>
 .recommendation-section {
-    max-width: 100%;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    padding: 20px;
 }
 
 .recommendation-card {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 30%; /* Default 3 per row */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
     min-width: 320px;
     max-width: 400px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* Tablet View: 2 per row */
+.recommendation-title {
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.recommendation-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.recommendation-email {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .recommendation-card {
         flex: 1 1 45%;
     }
 }
 
-/* Mobile View: 1 per row */
 @media (max-width: 768px) {
     .recommendation-card {
         flex: 1 1 100%;
         max-width: 90%;
     }
 }
-
-.recommendation-title {
-    color: #007bff;
-    font-size: 22px;
-    font-weight: bold;
-}
 </style>
 
 <div class="recommendation-section">
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/Harshul - Letter of Recommendation.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Jamie Kanlagna</a></div>
-        <p><strong>Full-Time Instructor, School of Applied Computer Science and IT</strong><br>
+        <div class="recommendation-title"><a href="assets/Harshul - Letter of Recommendation.pdf" class="recommendation-email" target="_blank">LETTER OF RECOMMENDATION: Jamie Kanlagna</a></div>
+        <p class="recommendation-content"><strong>Full-Time Instructor, School of Applied Computer Science and IT</strong><br>
         Conestoga College, Kitchener, Ontario<br>
-        <a href="mailto:jkanlagna@conestogac.on.ca">jkanlagna@conestogac.on.ca</a></p>
-        <p>"Harshul is an exceptional student with a strong academic record, critical thinking skills, and a great desire for continuous learning. His dedication, perseverance, and commitment are truly remarkable."</p>
+        <a href="mailto:jkanlagna@conestogac.on.ca" class="recommendation-email">jkanlagna@conestogac.on.ca</a></p>
+        <p class="recommendation-content">"Harshul is an exceptional student with a strong academic record, critical thinking skills, and a great desire for continuous learning. His dedication, perseverance, and commitment are truly remarkable."</p>
     </div>
     
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/H_Recommendation_signed.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Serge Trunkin</a></div>
-        <p><strong>Professor, Applied Computer Science & IT - ANISA</strong><br>
+        <div class="recommendation-title"><a href="assets/H_Recommendation_signed.pdf" class="recommendation-email" target="_blank">LETTER OF RECOMMENDATION: Serge Trunkin</a></div>
+        <p class="recommendation-content"><strong>Professor, Applied Computer Science & IT - ANISA</strong><br>
         Conestoga College, Kitchener, Ontario<br>
         <strong>Enterprise Architect and Cybersecurity Officer</strong><br>
         Loyalist College, Belleville, Ontario<br>
-        <a href="mailto:strunkin@conestogac.on.ca">strunkin@conestogac.on.ca</a> | <a href="mailto:strunkin@loyalistcollege.com">strunkin@loyalistcollege.com</a></p>
-        <p>"Harshul consistently demonstrated a strong grasp of complex concepts, tackling difficult scenarios with ease. He showed exceptional academic achievement and interpersonal skills."</p>
+        <a href="mailto:strunkin@conestogac.on.ca" class="recommendation-email">strunkin@conestogac.on.ca</a> | <a href="mailto:strunkin@loyalistcollege.com" class="recommendation-email">strunkin@loyalistcollege.com</a></p>
+        <p class="recommendation-content">"Harshul consistently demonstrated a strong grasp of complex concepts, tackling difficult scenarios with ease. He showed exceptional academic achievement and interpersonal skills."</p>
     </div>
     
     <div class="recommendation-card">
-        <div class="recommendation-title"><a href="assets/Recommendation - letter Conestoga - Harshul.pdf" target="_blank" title="View letter">LETTER OF RECOMMENDATION: Ayo Saba</a></div>
-        <p><strong>Professor, School of Applied Computer Science and IT</strong><br>
+        <div class="recommendation-title"><a href="assets/Recommendation - letter Conestoga - Harshul.pdf" class="recommendation-email" target="_blank">LETTER OF RECOMMENDATION: Ayo Saba</a></div>
+        <p class="recommendation-content"><strong>Professor, School of Applied Computer Science and IT</strong><br>
         Conestoga College, Kitchener, Ontario<br>
-        <a href="mailto:asaba@conestogac.on.ca">asaba@conestogac.on.ca</a></p>
-        <p>"Harshul has demonstrated himself as a hardworking and curious learner academically. His ability to manage program demands, projects, and other responsibilities is remarkable."</p>
+        <a href="mailto:asaba@conestogac.on.ca" class="recommendation-email">asaba@conestogac.on.ca</a></p>
+        <p class="recommendation-content">"Harshul has demonstrated himself as a hardworking and curious learner academically. His ability to manage program demands, projects, and other responsibilities is remarkable."</p>
     </div>
 </div>
 
